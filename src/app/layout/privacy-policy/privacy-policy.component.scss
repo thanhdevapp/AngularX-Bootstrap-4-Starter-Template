@@ -1,0 +1,217 @@
+@import "variables";
+.content {
+    width: 849px;
+    margin: 0 auto;
+    margin-top: 53px;
+    @include tablet {
+        width: 514px;
+        margin-top: 74px;
+    }
+    @include mobile {
+        width: 324px;
+    }
+    .header-title{
+        margin-bottom: 33px;
+        @include tablet {
+            margin-bottom: 48px;
+        }
+        @include mobile {
+           
+        }
+        h1 {
+            font-family: $opensans;
+            font-size: 48px;
+            line-height: 1.08;
+            text-align: left;
+            color: #1b1f24;
+            @include mobile {
+                font-size: 36px;
+                line-height: 1.17;
+                margin-top: -5px;
+                padding-right: 60px;
+            }
+        }
+        .updated {
+            font-family: Helvetica;
+            font-size: 12px;
+            text-align: right;
+            color: #abaeb1;
+            margin-top: 16px;
+            @include tablet {
+                text-align: left;
+                margin-top: 24px;
+            }
+            @include mobile{
+                text-align: left;
+                margin-top: 16px;
+            }
+        }
+    }
+    h2 {
+        font-family: $opensans;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: left;
+        color: #121518;
+        margin-bottom: 18px;
+        margin-top: -2px;
+        @include tablet{
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.31;
+        }
+    }
+    .section {
+        font-family: Muli;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.65;
+        text-align: left;
+        color: #8d8d8d;
+        margin-bottom: 48px;
+        @include tablet{
+            margin-bottom: 48px;
+        }
+        @include mobile{
+            font-size: 13px;
+            line-height: 1.54;
+            margin-bottom: 24px;
+        }
+        >p {
+            margin-bottom: 8px;
+            @include mobile {
+                margin-bottom: 0px;
+            }
+            @include tablet{
+                margin-top: 18px;
+                padding-right: 0px;
+            }
+
+            >p{
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+            .content-link{
+                color: #a88950;
+                font-weight: 600;
+            }
+        }
+        ul {
+            margin-left: -9px;
+            margin-top: 32px;
+            @include tablet{
+                margin-top: 16px;
+            }
+            @include mobile{
+                margin-left: -9px;
+                margin-top: 24px;
+                padding-right: 17px;
+                margin-bottom: 36px;
+            }
+            li {
+                margin-bottom: 10px;
+                padding-left: 4px;
+            }
+        }
+    }
+}
+.contact-terms{
+    margin-top: -30px;
+    margin-bottom: 64px;
+
+    @include mobile{
+        margin-top: 0px;
+    }
+    
+    .title{
+        font-family: Muli;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 2.15;
+        text-align: left;
+        color: #8d8d8d;
+        @include mobile{
+            font-size: 12px;
+            line-height: 2.33;
+        }
+    }
+
+    .data{
+        font-family: Muli;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.65;
+        text-align: left;
+        color: #000000;
+        margin-top: -4px;
+        @include mobile{
+            font-size: 13px;
+            line-height: 2.15;
+        }
+    }
+
+    .object{
+        display: inline-block;
+        @include tablet{
+            display: block;
+        }
+        @include mobile{
+            display: block;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            @include mobile{
+                font-size: 15px;
+            }
+        }
+    
+        .data{
+            color: #8d8d8d;
+            @include mobile{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .phone{
+        display: inline-block;
+        margin-left: 119px;
+        @include tablet{
+            margin-left: 0px;
+            margin-top: 16px;
+        }
+        @include mobile{
+            display: block;
+            margin-left: 0px;
+            margin-top: 9px;
+        }
+    }
+
+    .email{
+        display: inline-block;
+        margin-left: 59px;
+        @include tablet{
+            margin-left: 64px;
+        }
+        @include mobile{
+            display: block;
+            margin-left: 0px;
+            margin-top: 7px;
+        }
+    }
+}
+footer {
+    margin-top: 10px;
+    @include tablet{
+        margin-top: -3px;
+    }
+    @include mobile{
+        
+    }
+}

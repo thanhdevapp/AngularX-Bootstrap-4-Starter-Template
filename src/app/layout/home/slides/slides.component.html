@@ -1,0 +1,9 @@
+<div class="slides">
+    <div id="carousel">
+        <img class="item" src="{{item.source}}" alt="" *ngFor="let item of images;let i = index;let last = last">
+    </div>
+    <div class="device">
+      <a name="" id="btn-back" class="btn btn-back" role="button" (click)="backSlide()" ></a>
+      <a name="" id="btn-next" class="btn btn-next" role="button" (click)="nextSlide()"></a>
+    </div>
+</div>

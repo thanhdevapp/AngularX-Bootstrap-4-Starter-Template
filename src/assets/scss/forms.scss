@@ -1,0 +1,51 @@
+input.form-control {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    border: solid 1px #eeeeee;
+    border-radius: 2px;
+    width: 100%;
+    height: 36px;
+    padding: 2px 15px;
+    &::placeholder {
+        color: #9e9e9e;        
+    }
+    &:focus {
+        background-color: #fafafa;        
+        color: rgba(0, 0, 0, 0.87);
+        border-color: #eeeeee;
+    }
+}
+
+.form-group {
+    height: 56px;
+    label {
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #9e9e9e;
+        text-transform: uppercase;
+    }
+    .text-error {
+        font-family: Helvetica;
+        font-size: 12px;
+        text-align: left;
+        color: #c2343a;  
+        margin-top: 10px;
+        @include mobile{
+            margin-top: 3px;
+        }
+    }
+    input.ng-invalid.ng-touched:not([type=file]),
+    textarea.ng-invalid.ng-touched {
+        border-bottom: solid 1px #c2343a;
+    }
+    
+    // input.ng-invalid.ng-touched:focus:not([type=file]),
+    // textarea.ng-invalid.ng-touched:focus {
+        
+    // }
+}

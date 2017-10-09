@@ -1,0 +1,47 @@
+<app-menu></app-menu>
+<div class="content">
+  <div class="row header-title">
+    <div class="col-12 col-xl-7">
+      <h1>Marco Privacy Policy</h1>
+    </div>
+    <div class="col-12 col-xl-5">
+      <div class="updated">Updated: 20 October 2017</div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-12">
+      <div *ngFor="let item of contentData">
+          <h2>{{item.title}}</h2>
+          <div class="section">
+          <p *ngIf="item.content != ''" [innerHtml]="item.content" ></p>
+          <ul *ngIf="item.lst">
+              <li *ngFor="let ul of item.lst">
+                {{ul.value}}
+                <ol *ngIf="ul.child">
+                   <li *ngFor="let ol of ul.child">
+                      {{ol.value}}
+                   </li>
+                </ol>
+              </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="row contact-terms">
+      <div class="col-12">
+        <div class="object">
+            <div class="title">Jake Osman</div>
+            <div class="data">Privacy Officer</div>
+          </div>
+          <div class="phone">
+              <div class="title">Phone</div>
+              <div class="data">0402 557 117</div>
+          </div>
+          <div class="email">
+              <div class="title">Email</div>
+              <div class="data">admin@themarcoapp.com.au </div>
+          </div>
+      </div>
+  </div>
+</div>

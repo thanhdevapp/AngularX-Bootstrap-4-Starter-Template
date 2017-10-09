@@ -1,0 +1,48 @@
+<section class="contact-form">
+    <div class="form-container">
+      <h1 class="text-center">Let’s Talk</h1>
+      <form id="contact-form-scroll" [formGroup]="contactForm" novalidate (ngSubmit)="submitForm(contactForm.value)" #myForm="ngForm">
+        <div class="form-group row">
+          <div class="col-12">
+            <input type="text" class="form-control" autocomplete="off" [formControl]="contactForm.controls['name']" id="name" placeholder="Name*">
+            <div class="text-error" *ngIf="contactForm.controls['name'].hasError('required') && (contactForm.controls['name'].touched || myForm.submitted)">{{'MSG.name_required' | translate}}</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <input type="text" class="form-control" autocomplete="off" [formControl]="contactForm.controls['email']" id="email" placeholder="Email*">
+            <div class="text-error" *ngIf="contactForm.controls['email'].hasError('required') && contactForm.controls['email'].touched">{{'MSG.email_required' | translate}}</div>
+            <div class="text-error" *ngIf="contactForm.controls['email'].hasError('email') && contactForm.controls['email'].hasError('minlength') && contactForm.controls['email'].touched">{{'MSG.email_invalid' | translate}}</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <input type="text" class="form-control" autocomplete="off" [formControl]="contactForm.controls['phone']" id="phone" placeholder="Phone">
+            <div class="text-error" *ngIf="contactForm.controls['phone'].invalid && (contactForm.controls['phone'].touched || myForm.submitted)">{{'MSG.phone_invalid' | translate}}</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <input type="text" class="form-control" autocomplete="off" [formControl]="contactForm.controls['comments']" id="comments" placeholder="Comment*">
+            <div class="text-error" *ngIf="contactForm.controls['comments'].hasError('required') && contactForm.controls['comments'].touched">{{'MSG.comments_required' | translate}}</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+ <ng-template #template>
+    <div class="modal-body">
+      <div class="heading">
+       Your contact has been submitted
+      </div>
+      <p class="text-center xs-mt-10">we will respond as soon as possible</p>
+      <a class="btn btn-normal" (click)="modalRef.hide()">CLOSE</a>
+    </div>
+</ng-template>
+   

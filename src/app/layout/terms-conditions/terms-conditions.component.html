@@ -1,0 +1,54 @@
+<app-menu></app-menu>
+<div class="content">
+  <div class="row header-title ht">
+    <div class="col-12 col-xl-8">
+      <h1>Marco App and Website Terms and Conditions</h1>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="updated">Updated: 20 October 2017</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div *ngFor="let item of contentData">
+        <h2>{{item.title}}</h2>
+        <div class="section">
+        <p *ngIf="item.content != ''" [innerHtml]="item.content" ></p>
+        <ul *ngIf="item.lst && !item.number">
+            <li *ngFor="let ul of item.lst">
+              {{ul.value}}
+              <ol class="ul-ol"*ngIf="ul.child">
+                 <li *ngFor="let ol of ul.child">
+                    {{ol.value}}
+                 </li>
+              </ol>
+            </li>
+        </ul>
+        <ol class="ol-content"*ngIf="item.lst && item.number">
+          <li *ngFor="let ul of item.lst">
+            {{ul.value}}
+            <ol *ngIf="ul.child">
+               <li *ngFor="let ol of ul.child">
+                  {{ol.value}}
+               </li>
+            </ol>
+          </li>
+      </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="roư contact-footer">
+     <div class="col-12">
+        <div class="phone-number">
+            <div class="obj1">Telephone number</div>
+            <div class="obj2">0402 557 117</div>
+        </div>
+        <div class="email-address">
+            <div class="obj1">Email</div>
+            <div class="obj2">admin@themarcoapp.com.au </div>
+        </div>
+     </div>
+  </div>
+</div>

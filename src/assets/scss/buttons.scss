@@ -1,0 +1,152 @@
+
+$btn_back : "/assets/buttons/arrow_back_active.svg";
+$btn_back_pressed : "/assets/buttons/arrow_back_tapAndHover.svg";
+
+$btn_next : "/assets/buttons/arrow_next_active.svg";
+$btn_next_pressed : "/assets/buttons/arrow_next_tapAndHover.svg";
+
+$btn_appstore : "/assets/buttons/appStore_active.svg";
+$btn_appstore_pressed : "/assets/buttons/appStore_tapAndHover.svg";
+
+$btn_ggstore : "/assets/buttons/GooglePlay_active.svg";
+$btn_ggstore_pressed : "/assets/buttons/GooglePlay_tapAndHover.svg";
+
+
+.btn {
+    min-width: 109px;
+    height: 36px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.9px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #02b6bd;
+    border-color: #02b6bd;
+    &:hover, &:active {
+        background-color: #01a4aa;
+        border-color: #01a4aa;
+    }
+    &[disabled] {
+        color: #fff;
+        background-color: #81dbde;
+        border-color: #81dbde;
+    }
+}
+
+.btn-dark {
+    background-color: #212121;
+    border-color: #212121;
+    &:hover, &:active {
+        background-color: #4d4d4d;
+        border-color: #4d4d4d;
+    }
+    &[disabled] {
+        color: #fff;
+        background-color: #bdbdbd;
+        border-color: #bdbdbd;
+    }
+}
+
+.btn-link {
+    color: #02b6bd;    
+    &:hover, &:active {
+        color: #02b6bd;
+        background-color: #f5f5f5;
+        border-color: #f5f5f5;
+        text-decoration: none;
+    }
+    &[disabled] {
+        color: #bdbdbd;
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+
+.btn-light {
+    color: #212121;
+    background-color: #fff;
+    border-color: #fff;
+    &:hover, &:active {
+        color: #212121;
+        background-color: #f5f5f5;
+        border-color: #f5f5f5;
+        text-decoration: none;
+    }
+    &[disabled] {
+        color: #bdbdbd;
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+
+// .btn-back {
+//     background-image: url($btn_back);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 40px;
+//     height: 40px;
+//     cursor: pointer;
+//     &:hover, &:active {
+//         background-image: url($btn_back_pressed);
+//     }
+// }
+// .btn-next {
+//     background-image: url($btn_next);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 40px;
+//     height: 40px;
+//     cursor: pointer;
+//     &:hover, &:active {
+//         background-image: url($btn_next_pressed);
+//     }
+// }
+
+// .btn-appstore {
+//     background-image: url($btn_appstore);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 170px;
+//     height: 52px;
+//     cursor: pointer;
+//     &:hover, &:active {
+//         background-image: url($btn_appstore_pressed);
+//     }
+// }
+// .btn-ggstore {
+//     background-image: url($btn_ggstore);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 170px;
+//     height: 52px;
+//     cursor: pointer;
+//     &:hover, &:active {
+//         background-image: url($btn_ggstore_pressed);
+//     }
+// }
+
+// .btn-submit {
+//     font-family: Muli;
+//     font-size: 18px;
+//     font-weight: 300;
+//     line-height: 1.11;
+//     text-align: center;
+//     color: #ffffff;
+//     width: 221px;
+//     height: 48px;
+//     border-radius: 4px;
+//     border: solid 1px #ffffff;
+//     background-color: transparent;
+//     cursor: pointer;
+//     &:hover, &:active {
+//         background-color: #ffffff;
+//         color: #b6985a;
+//     }
+// }

@@ -1,0 +1,158 @@
+@import "variables";
+header {
+    height: 1463px;
+    background-image: url('/assets/images/1440px_1/section1_image_bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include desktop-xxxl {
+        background-image: url('/assets/images/1920px_1/section1_image_bg.jpg');
+    }
+    @include tablet-and-mobile {
+        height: auto;
+        background-image: url('/assets/images/768px_1/section1_image_bg.jpg');
+    }
+    .col-left {
+        margin-top: 266px;
+        h3 {
+            font-family: $opensans;
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.19;
+            text-align: center;
+            color: #121518;
+            @include mobile {
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 1.58;
+            }
+        }
+        @include tablet-and-mobile {
+            margin-top: 216px;
+        }
+        @include mobile {
+            margin-top: 145px;
+        }
+        .btn-group-store {
+            @include tablet-and-mobile {
+                margin-top: 25px;
+            }
+            @include mobile {
+                margin-top: 19px;
+                margin-left: -1px;
+                margin-right: -5px;
+                height: 46px;
+            }
+            .btn-appstore {
+                @include tablet-and-mobile {
+                    margin-right: 20px;
+                }
+                @include mobile {
+                    width: 156px;
+                    height: 44.9px;
+                    background-size: cover;
+                    margin-right: 8.5px;
+                }
+            }
+        
+            .btn-ggstore {
+                @include mobile {
+                    width: 156px;
+                    height: 47px;
+                    background-size: cover;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .col-right {
+        margin-top: 361px;
+        @include desktop-xxxl {
+            margin-top: 370px;
+        }
+        @include tablet-and-mobile {
+            margin-top: 264px;
+        }
+        @include mobile {
+            margin-top: -372px;
+            margin-left: 174px;
+        }
+        .phone {
+            margin-left: 126px;
+            @include tablet-and-mobile {
+                margin-left: 27px;
+                width: 244.2px;
+                height: 677.9px;
+                 img {
+                    width: 100%;
+                    height: 100%;
+                 }
+            }
+            @include mobile {
+                width: 122px;
+                height: 339px;
+            }
+        }
+    }
+    .heading {
+        width: 369px;
+        height: 156px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 48px;
+        line-height: 1.08;
+        text-align: left;
+        color: #1b1f24;
+        @include mobile {
+            width: 190px;
+            font-size: 36px;
+            line-height: 1.17;
+        }
+    }
+    .subheading {
+        width: 296px;
+        height: 25px;
+        font-family: Muli;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+        margin-top: 35px;
+        @include mobile {
+            font-size: 16px;
+            text-align: left;
+            margin-top: -18px;
+        }
+    }
+}
+
+.welcome {
+    margin-top: 286px;
+    h3 {
+        letter-spacing: -1px;
+    }
+    .text {
+        width: 471px;
+        font-family: Muli;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.65;
+        text-align: left;
+        color: #8d8d8d;
+        margin-top: 34px;
+        @include tablet-and-mobile {
+            width: 346px;
+        }
+        @include mobile {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.54;
+            width: 185px;
+            margin-top: 23px;
+        }
+        
+    }
+    @include tablet-and-mobile {
+        margin-top: 138px;
+    }
+    @include mobile {
+        margin-top: 103px;
+    }
+}

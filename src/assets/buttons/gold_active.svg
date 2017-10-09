@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="48px" viewBox="0 0 160 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>buttons/gold_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design-guideline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buttons" transform="translate(-293.000000, -186.000000)">
+            <g id="buttons/gold/active" transform="translate(293.000000, 186.000000)">
+                <g>
+                    <rect id="Rectangle-2" stroke="#B6985A" x="0.5" y="0.5" width="159" height="47" rx="4"></rect>
+                    <text id="↳🖊Content" font-family="Muli-Regular, Muli" font-size="18" font-weight="normal" line-spacing="20" fill="#B6985A">
+                        <tspan x="48.05" y="29.4160461">Active</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,133 @@
+@import "variables";
+@import "../privacy-policy/privacy-policy.component.scss";
+
+.ht{
+    
+}
+.header-title{
+    h1 {
+        
+        @include mobile {
+            padding-right: 0px !important;
+        }
+    }
+    .updated {
+        
+        @include tablet {
+            
+        }
+        @include mobile{
+            
+        }
+    }
+}
+.ol-content{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.65;
+    text-align: left;
+    color: #8d8d8d;
+    margin-left: -11px;
+    li{
+        margin-top: 19px;
+    }
+}
+.ul-ol{
+    margin-top: 26px;
+    margin-bottom: 24px;
+}
+.contact-footer{
+    margin-left: -18px;
+    margin-bottom: 64px;
+    .phone-number{
+        display: inline-block;
+        @include mobile{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .email-address{
+        margin-left: 64px;
+        display: inline-block;
+        @include mobile{
+            display: block; 
+            margin-left: 0px;
+        }
+    }
+    .obj1{
+        font-family: Muli;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 2.15;
+        text-align: left;
+        color: #8d8d8d;
+    }
+    .obj2{
+        font-family: Muli;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.65;
+        text-align: left;
+        color: #000000;
+    }
+}
+// app-terms-conditions {
+//     .content {
+//         width: 849px;
+//         margin: 0 auto;
+//         margin-top: 53px;
+//         @include tablet {
+//             width: 514px;
+//             margin-top: 74px;
+//         }
+//         h1 {
+//             width: 369px;
+//             height: 104px;
+//             font-family: $opensans;
+//             font-size: 48px;
+//             line-height: 1.08;
+//             text-align: left;
+//             color: #1b1f24;
+//             margin-bottom: 34px;
+//             @include tablet {
+//                 margin-bottom: -3px;
+//             }
+//         }
+//         .updated {
+//             font-family: Helvetica;
+//             font-size: 12px;
+//             text-align: right;
+//             color: #abaeb1;
+//             margin-top: 16px;
+//             @include tablet {
+//                 text-align: left;
+//                 margin-bottom: 34px;
+//             }
+//         }
+//         h2 {
+//             font-family: $opensans;
+//             font-size: 24px;
+//             font-weight: 600;
+//             line-height: 1.25;
+//             text-align: left;
+//             color: #121518;
+//             margin-bottom: 18px;
+//         }
+//         .section {
+//             font-family: Muli;
+//             font-size: 17px;
+//             font-weight: 300;
+//             line-height: 1.65;
+//             text-align: left;
+//             color: #8d8d8d;
+//             margin-bottom: 54px;
+//             p {
+//                 margin-bottom: 8px;
+//             }
+//         }
+//     }
+// }
+
+// footer {
+//     margin-top: 10px;
+// }

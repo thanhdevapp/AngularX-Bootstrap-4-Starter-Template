@@ -1,0 +1,14 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular with ngx-translate!",
+      "SELECT": "Change language"
+    },
+
+    "MSG":{
+      "email_required": "Please enter your email address",
+      "email_invalid": "Please correct your email address",
+      "name_required":  "Please enter your name",
+      "phone_invalid":  "Please correct your phone",
+      "comments_required": "Please enter message"
+    }
+  }

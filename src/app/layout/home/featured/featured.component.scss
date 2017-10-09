@@ -1,0 +1,196 @@
+@import "variables";
+$bg-width: 499px;
+.featured {
+    margin-top: 0px;
+    display: flex;
+    @include tablet-and-mobile {
+        margin-top: -12px;
+    }
+    @include mobile {
+        margin-top: 0px;
+    }
+    .title {
+        width: 438px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 87px;
+        @include tablet-and-mobile {
+            margin-bottom: 63px;
+        }
+        @include mobile {
+            width: auto;
+            margin-bottom: 52px;
+        }
+        h3 {
+            font-family: $opensans;
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.19;
+            text-align: center;
+            color: #121518;
+            @include mobile {
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 1.58;
+            }
+        }
+        .f-des {
+            margin-top: 11px;
+            font-weight: 300;
+            line-height: 1.65;
+            text-align: center;
+            color: #8d8d8d;
+            @include mobile {
+                margin-top: 14px;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 1.54;
+            }
+        }
+    }
+    .bg {
+        width: $bg-width;
+        height: 288px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+        padding: 48px 64px;
+        @include mobile {
+            width: 292px;
+            height: 256px;
+            padding: 48px 40px;
+        }
+        .heading {
+            font-family: $opensans;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: left;
+            color: #121518;
+            @include mobile {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.31;
+                margin-top: 2px;
+            }
+        }
+        .des {
+            font-family: Muli;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.65;
+            text-align: left;
+            color: #8d8d8d;
+            margin-top: 12px;
+            @include mobile {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 1.54;
+                margin-top: 21px;
+            }
+        }
+
+
+    }    
+    .feature-left,
+    .feature-right {
+        position: relative;
+        height: 432px;
+        margin-bottom: 96px;
+        @include tablet-and-mobile {
+            height: 648px;
+            width: 100%;
+            .image {                
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @include mobile {
+            height: 368px;
+        }
+        .bg {
+            position: relative;
+            &:before {
+                content: '';
+                width: 33px;
+                height: 33px;
+                position: absolute;
+                background-image: url('/assets/images/section-2-quote-left.svg');                
+            }
+            &:after {
+                content: '';
+                width: 33px;
+                height: 33px;
+                position: absolute;
+                background-image: url('/assets/images/section-2-quote-right.svg');                
+            }
+        }
+    }
+    .feature-left {
+        .bg {
+            position: absolute;
+            top: 72px;
+            left: 0;
+            &:before {
+                content: '';
+                top: 24px;
+                left: 19px;            
+            }
+            &:after {
+                bottom: 24px;
+                right: 19px;           
+            }
+            @include tablet-and-mobile {
+                top: 384px;
+                left: calc(50% - (499px/2));
+            }
+            @include  mobile {
+                top: 160px;
+                left: calc(50% - (292px/2));
+            }
+        }
+        .image {
+            float: right;
+        }
+
+    }
+    .feature-right {
+        .bg {
+            position: absolute;
+            top: 72px;
+            right: 0;
+            &:before {
+                top: 24px;
+                right: 19px;     
+                transform: rotate(90deg); 
+            }
+            &:after {
+                bottom: 24px;
+                left: 19px;     
+                transform: rotate(90deg);      
+            }
+            @include tablet-and-mobile {
+                top: 384px;
+                left: calc(50% - (499px/2));
+            }
+            @include  mobile {
+                top: 160px;
+                left: calc(50% - (292px/2));
+            }
+        }
+        .image {
+            float: left;
+        }
+    }
+
+    hr {
+        margin: 143px -74px;
+        @include tablet-and-mobile {
+            margin: 120px 0;
+        }
+        @include mobile {
+            margin: 111px 0;
+        }
+    }
+}

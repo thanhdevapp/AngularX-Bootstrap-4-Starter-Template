@@ -1,0 +1,15 @@
+{
+    "HOME": {
+      "TITLE": "Bonjour Angular avec ngx-translate !",
+      "SELECT": "Changer la langue"
+    },
+    "Message":{
+      "email_required": "Please enter your email address",
+      "email_email": "Please correct your email address",
+      "email_loginFail": "There was a problem. Your email or password is incorrect",
+      "email_exist" : "This email is existing. Please enter another one",
+      "password_required": "Please enter password",
+      "password_length": "Password must be minimum 8 characters",
+      "agree": "You have not agreed with TERMS OF SERVICE"
+    }
+  }
